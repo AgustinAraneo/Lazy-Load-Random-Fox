@@ -21,11 +21,14 @@ const Home = (): JSX.Element => {
 
   return (
     <div>
-      <div>
-        <h1 className="text-2xl font-bold text-center text-zinc-700">
-          Generador Fox Random
+      <div className="bg-gray-100">
+        <h1 className="pt-10 text-2xl font-bold text-center text-zinc-700">
+          Generador de Fotos al Azar
+          <br/>
+          de 
+          <span className="text-indigo-500"> Zorros 🦊</span>
         </h1>
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-10">
           <button
             className="w-auto h-auto p-2 font-medium text-white bg-indigo-500 rounded"
             onClick={addNewFox}
@@ -39,7 +42,7 @@ const Home = (): JSX.Element => {
               src={url}
               width="320"
               height="auto"
-              className="mx-auto bg-gray-300 rounded-md"
+              className="mx-auto bg-gray-300 border-2 border-indigo-500 border-dashed rounded-md"
               onClick={() => {
                 console.log("holi!");
               }}
